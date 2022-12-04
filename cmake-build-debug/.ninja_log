@@ -1,0 +1,6 @@
+# ninja log v5
+14	300	6918206922901524	build.ninja	89b65a9ada70440a
+13	439	6918203894619166	CMakeFiles/ProjektTesty.dir/src/main.c.obj	c6fa40922c7dfb1b
+79	197	6918195814930520	ProjektTesty.exe	d824836060ec4f43
+14	437	6918206963039733	CMakeFiles/ProjektTesty.dir/src/main.c.obj	4d9683e902b47f12
+438	608	6918206964719285	ProjektTesty.exe	5ae08f4647e093ab
