@@ -4,9 +4,9 @@
 #ifndef PROJEKTTESTY_APP_H
 #define PROJEKTTESTY_APP_H
 
-#endif //PROJEKTTESTY_APP_H
-
 #define PACKAGE_NAME "pl.smcebi.projekttesty"
 
-int initialize_app(int argc, char *argv[]);
+static void activate();
 static void run_app();
+
+#endif //PROJEKTTESTY_APP_H
