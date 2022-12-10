@@ -1,4 +1,0 @@
-C:\msys64\mingw64\bin\cmake.exe -DCMAKE_BUILD_TYPE=Debug -DCMAKE_MAKE_PROGRAM=C:/msys64/mingw64/bin/ninja.exe -DCMAKE_C_COMPILER=C:/msys64/mingw64/bin/gcc.exe -DCMAKE_CXX_COMPILER=C:/msys64/mingw64/bin/g++.exe -G Ninja -S C:\Users\Sebastian\CLionProjects\ProjektTesty -B C:\Users\Sebastian\CLionProjects\ProjektTesty\cmake-build-debug
--- Configuring done
--- Generating done
--- Build files have been written to: C:/Users/Sebastian/CLionProjects/ProjektTesty/cmake-build-debug
