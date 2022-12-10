@@ -49,12 +49,68 @@ cmake_ninja_workdir = C$:/Users/Sebastian/CLionProjects/ProjektTesty/cmake-build
 
 build cmake_object_order_depends_target_ProjektTesty: phony || CMakeFiles/ProjektTesty.dir
 
-build CMakeFiles/ProjektTesty.dir/src/main.c.obj: C_COMPILER__ProjektTesty_Debug C$:/Users/Sebastian/CLionProjects/ProjektTesty/src/main.c || cmake_object_order_depends_target_ProjektTesty
-  DEP_FILE = CMakeFiles\ProjektTesty.dir\src\main.c.obj.d
+build CMakeFiles/ProjektTesty.dir/src/presentation/main.c.obj: C_COMPILER__ProjektTesty_Debug C$:/Users/Sebastian/CLionProjects/ProjektTesty/src/presentation/main.c || cmake_object_order_depends_target_ProjektTesty
+  DEP_FILE = CMakeFiles\ProjektTesty.dir\src\presentation\main.c.obj.d
   FLAGS = -g -fdiagnostics-color=always   -mfpmath=sse -msse -msse2 -std=gnu99
   INCLUDES = -IC:/Users/Sebastian/CLionProjects/ProjektTesty/ProjektTesty -IC:/msys64/mingw64/bin/../include/gtk-4.0 -IC:/msys64/mingw64/bin/../include/pango-1.0 -IC:/msys64/mingw64/bin/../include/glib-2.0 -IC:/msys64/mingw64/bin/../lib/glib-2.0/include -IC:/msys64/mingw64/bin/../include/harfbuzz -IC:/msys64/mingw64/bin/../include/freetype2 -IC:/msys64/mingw64/bin/../include/libpng16 -IC:/msys64/mingw64/bin/../include/fribidi -IC:/msys64/mingw64/bin/../include/cairo -IC:/msys64/mingw64/bin/../include/lzo -IC:/msys64/mingw64/bin/../include/pixman-1 -IC:/msys64/mingw64/bin/../include/gdk-pixbuf-2.0 -IC:/msys64/mingw64/bin/../include/graphene-1.0 -IC:/msys64/mingw64/bin/../lib/graphene-1.0/include
   OBJECT_DIR = CMakeFiles\ProjektTesty.dir
-  OBJECT_FILE_DIR = CMakeFiles\ProjektTesty.dir\src
+  OBJECT_FILE_DIR = CMakeFiles\ProjektTesty.dir\src\presentation
+
+build CMakeFiles/ProjektTesty.dir/src/presentation/common/buttons.c.obj: C_COMPILER__ProjektTesty_Debug C$:/Users/Sebastian/CLionProjects/ProjektTesty/src/presentation/common/buttons.c || cmake_object_order_depends_target_ProjektTesty
+  DEP_FILE = CMakeFiles\ProjektTesty.dir\src\presentation\common\buttons.c.obj.d
+  FLAGS = -g -fdiagnostics-color=always   -mfpmath=sse -msse -msse2 -std=gnu99
+  INCLUDES = -IC:/Users/Sebastian/CLionProjects/ProjektTesty/ProjektTesty -IC:/msys64/mingw64/bin/../include/gtk-4.0 -IC:/msys64/mingw64/bin/../include/pango-1.0 -IC:/msys64/mingw64/bin/../include/glib-2.0 -IC:/msys64/mingw64/bin/../lib/glib-2.0/include -IC:/msys64/mingw64/bin/../include/harfbuzz -IC:/msys64/mingw64/bin/../include/freetype2 -IC:/msys64/mingw64/bin/../include/libpng16 -IC:/msys64/mingw64/bin/../include/fribidi -IC:/msys64/mingw64/bin/../include/cairo -IC:/msys64/mingw64/bin/../include/lzo -IC:/msys64/mingw64/bin/../include/pixman-1 -IC:/msys64/mingw64/bin/../include/gdk-pixbuf-2.0 -IC:/msys64/mingw64/bin/../include/graphene-1.0 -IC:/msys64/mingw64/bin/../lib/graphene-1.0/include
+  OBJECT_DIR = CMakeFiles\ProjektTesty.dir
+  OBJECT_FILE_DIR = CMakeFiles\ProjektTesty.dir\src\presentation\common
+
+build CMakeFiles/ProjektTesty.dir/src/presentation/question/question_view.c.obj: C_COMPILER__ProjektTesty_Debug C$:/Users/Sebastian/CLionProjects/ProjektTesty/src/presentation/question/question_view.c || cmake_object_order_depends_target_ProjektTesty
+  DEP_FILE = CMakeFiles\ProjektTesty.dir\src\presentation\question\question_view.c.obj.d
+  FLAGS = -g -fdiagnostics-color=always   -mfpmath=sse -msse -msse2 -std=gnu99
+  INCLUDES = -IC:/Users/Sebastian/CLionProjects/ProjektTesty/ProjektTesty -IC:/msys64/mingw64/bin/../include/gtk-4.0 -IC:/msys64/mingw64/bin/../include/pango-1.0 -IC:/msys64/mingw64/bin/../include/glib-2.0 -IC:/msys64/mingw64/bin/../lib/glib-2.0/include -IC:/msys64/mingw64/bin/../include/harfbuzz -IC:/msys64/mingw64/bin/../include/freetype2 -IC:/msys64/mingw64/bin/../include/libpng16 -IC:/msys64/mingw64/bin/../include/fribidi -IC:/msys64/mingw64/bin/../include/cairo -IC:/msys64/mingw64/bin/../include/lzo -IC:/msys64/mingw64/bin/../include/pixman-1 -IC:/msys64/mingw64/bin/../include/gdk-pixbuf-2.0 -IC:/msys64/mingw64/bin/../include/graphene-1.0 -IC:/msys64/mingw64/bin/../lib/graphene-1.0/include
+  OBJECT_DIR = CMakeFiles\ProjektTesty.dir
+  OBJECT_FILE_DIR = CMakeFiles\ProjektTesty.dir\src\presentation\question
+
+build CMakeFiles/ProjektTesty.dir/src/presentation/menu/menu_view.c.obj: C_COMPILER__ProjektTesty_Debug C$:/Users/Sebastian/CLionProjects/ProjektTesty/src/presentation/menu/menu_view.c || cmake_object_order_depends_target_ProjektTesty
+  DEP_FILE = CMakeFiles\ProjektTesty.dir\src\presentation\menu\menu_view.c.obj.d
+  FLAGS = -g -fdiagnostics-color=always   -mfpmath=sse -msse -msse2 -std=gnu99
+  INCLUDES = -IC:/Users/Sebastian/CLionProjects/ProjektTesty/ProjektTesty -IC:/msys64/mingw64/bin/../include/gtk-4.0 -IC:/msys64/mingw64/bin/../include/pango-1.0 -IC:/msys64/mingw64/bin/../include/glib-2.0 -IC:/msys64/mingw64/bin/../lib/glib-2.0/include -IC:/msys64/mingw64/bin/../include/harfbuzz -IC:/msys64/mingw64/bin/../include/freetype2 -IC:/msys64/mingw64/bin/../include/libpng16 -IC:/msys64/mingw64/bin/../include/fribidi -IC:/msys64/mingw64/bin/../include/cairo -IC:/msys64/mingw64/bin/../include/lzo -IC:/msys64/mingw64/bin/../include/pixman-1 -IC:/msys64/mingw64/bin/../include/gdk-pixbuf-2.0 -IC:/msys64/mingw64/bin/../include/graphene-1.0 -IC:/msys64/mingw64/bin/../lib/graphene-1.0/include
+  OBJECT_DIR = CMakeFiles\ProjektTesty.dir
+  OBJECT_FILE_DIR = CMakeFiles\ProjektTesty.dir\src\presentation\menu
+
+build CMakeFiles/ProjektTesty.dir/src/presentation/score/score_view.c.obj: C_COMPILER__ProjektTesty_Debug C$:/Users/Sebastian/CLionProjects/ProjektTesty/src/presentation/score/score_view.c || cmake_object_order_depends_target_ProjektTesty
+  DEP_FILE = CMakeFiles\ProjektTesty.dir\src\presentation\score\score_view.c.obj.d
+  FLAGS = -g -fdiagnostics-color=always   -mfpmath=sse -msse -msse2 -std=gnu99
+  INCLUDES = -IC:/Users/Sebastian/CLionProjects/ProjektTesty/ProjektTesty -IC:/msys64/mingw64/bin/../include/gtk-4.0 -IC:/msys64/mingw64/bin/../include/pango-1.0 -IC:/msys64/mingw64/bin/../include/glib-2.0 -IC:/msys64/mingw64/bin/../lib/glib-2.0/include -IC:/msys64/mingw64/bin/../include/harfbuzz -IC:/msys64/mingw64/bin/../include/freetype2 -IC:/msys64/mingw64/bin/../include/libpng16 -IC:/msys64/mingw64/bin/../include/fribidi -IC:/msys64/mingw64/bin/../include/cairo -IC:/msys64/mingw64/bin/../include/lzo -IC:/msys64/mingw64/bin/../include/pixman-1 -IC:/msys64/mingw64/bin/../include/gdk-pixbuf-2.0 -IC:/msys64/mingw64/bin/../include/graphene-1.0 -IC:/msys64/mingw64/bin/../lib/graphene-1.0/include
+  OBJECT_DIR = CMakeFiles\ProjektTesty.dir
+  OBJECT_FILE_DIR = CMakeFiles\ProjektTesty.dir\src\presentation\score
+
+build CMakeFiles/ProjektTesty.dir/src/data/question_datasource.c.obj: C_COMPILER__ProjektTesty_Debug C$:/Users/Sebastian/CLionProjects/ProjektTesty/src/data/question_datasource.c || cmake_object_order_depends_target_ProjektTesty
+  DEP_FILE = CMakeFiles\ProjektTesty.dir\src\data\question_datasource.c.obj.d
+  FLAGS = -g -fdiagnostics-color=always   -mfpmath=sse -msse -msse2 -std=gnu99
+  INCLUDES = -IC:/Users/Sebastian/CLionProjects/ProjektTesty/ProjektTesty -IC:/msys64/mingw64/bin/../include/gtk-4.0 -IC:/msys64/mingw64/bin/../include/pango-1.0 -IC:/msys64/mingw64/bin/../include/glib-2.0 -IC:/msys64/mingw64/bin/../lib/glib-2.0/include -IC:/msys64/mingw64/bin/../include/harfbuzz -IC:/msys64/mingw64/bin/../include/freetype2 -IC:/msys64/mingw64/bin/../include/libpng16 -IC:/msys64/mingw64/bin/../include/fribidi -IC:/msys64/mingw64/bin/../include/cairo -IC:/msys64/mingw64/bin/../include/lzo -IC:/msys64/mingw64/bin/../include/pixman-1 -IC:/msys64/mingw64/bin/../include/gdk-pixbuf-2.0 -IC:/msys64/mingw64/bin/../include/graphene-1.0 -IC:/msys64/mingw64/bin/../lib/graphene-1.0/include
+  OBJECT_DIR = CMakeFiles\ProjektTesty.dir
+  OBJECT_FILE_DIR = CMakeFiles\ProjektTesty.dir\src\data
+
+build CMakeFiles/ProjektTesty.dir/src/domain/model/question.c.obj: C_COMPILER__ProjektTesty_Debug C$:/Users/Sebastian/CLionProjects/ProjektTesty/src/domain/model/question.c || cmake_object_order_depends_target_ProjektTesty
+  DEP_FILE = CMakeFiles\ProjektTesty.dir\src\domain\model\question.c.obj.d
+  FLAGS = -g -fdiagnostics-color=always   -mfpmath=sse -msse -msse2 -std=gnu99
+  INCLUDES = -IC:/Users/Sebastian/CLionProjects/ProjektTesty/ProjektTesty -IC:/msys64/mingw64/bin/../include/gtk-4.0 -IC:/msys64/mingw64/bin/../include/pango-1.0 -IC:/msys64/mingw64/bin/../include/glib-2.0 -IC:/msys64/mingw64/bin/../lib/glib-2.0/include -IC:/msys64/mingw64/bin/../include/harfbuzz -IC:/msys64/mingw64/bin/../include/freetype2 -IC:/msys64/mingw64/bin/../include/libpng16 -IC:/msys64/mingw64/bin/../include/fribidi -IC:/msys64/mingw64/bin/../include/cairo -IC:/msys64/mingw64/bin/../include/lzo -IC:/msys64/mingw64/bin/../include/pixman-1 -IC:/msys64/mingw64/bin/../include/gdk-pixbuf-2.0 -IC:/msys64/mingw64/bin/../include/graphene-1.0 -IC:/msys64/mingw64/bin/../lib/graphene-1.0/include
+  OBJECT_DIR = CMakeFiles\ProjektTesty.dir
+  OBJECT_FILE_DIR = CMakeFiles\ProjektTesty.dir\src\domain\model
+
+build CMakeFiles/ProjektTesty.dir/src/domain/usecase/get_question_usecase.c.obj: C_COMPILER__ProjektTesty_Debug C$:/Users/Sebastian/CLionProjects/ProjektTesty/src/domain/usecase/get_question_usecase.c || cmake_object_order_depends_target_ProjektTesty
+  DEP_FILE = CMakeFiles\ProjektTesty.dir\src\domain\usecase\get_question_usecase.c.obj.d
+  FLAGS = -g -fdiagnostics-color=always   -mfpmath=sse -msse -msse2 -std=gnu99
+  INCLUDES = -IC:/Users/Sebastian/CLionProjects/ProjektTesty/ProjektTesty -IC:/msys64/mingw64/bin/../include/gtk-4.0 -IC:/msys64/mingw64/bin/../include/pango-1.0 -IC:/msys64/mingw64/bin/../include/glib-2.0 -IC:/msys64/mingw64/bin/../lib/glib-2.0/include -IC:/msys64/mingw64/bin/../include/harfbuzz -IC:/msys64/mingw64/bin/../include/freetype2 -IC:/msys64/mingw64/bin/../include/libpng16 -IC:/msys64/mingw64/bin/../include/fribidi -IC:/msys64/mingw64/bin/../include/cairo -IC:/msys64/mingw64/bin/../include/lzo -IC:/msys64/mingw64/bin/../include/pixman-1 -IC:/msys64/mingw64/bin/../include/gdk-pixbuf-2.0 -IC:/msys64/mingw64/bin/../include/graphene-1.0 -IC:/msys64/mingw64/bin/../lib/graphene-1.0/include
+  OBJECT_DIR = CMakeFiles\ProjektTesty.dir
+  OBJECT_FILE_DIR = CMakeFiles\ProjektTesty.dir\src\domain\usecase
+
+build CMakeFiles/ProjektTesty.dir/src/presentation/app/app.c.obj: C_COMPILER__ProjektTesty_Debug C$:/Users/Sebastian/CLionProjects/ProjektTesty/src/presentation/app/app.c || cmake_object_order_depends_target_ProjektTesty
+  DEP_FILE = CMakeFiles\ProjektTesty.dir\src\presentation\app\app.c.obj.d
+  FLAGS = -g -fdiagnostics-color=always   -mfpmath=sse -msse -msse2 -std=gnu99
+  INCLUDES = -IC:/Users/Sebastian/CLionProjects/ProjektTesty/ProjektTesty -IC:/msys64/mingw64/bin/../include/gtk-4.0 -IC:/msys64/mingw64/bin/../include/pango-1.0 -IC:/msys64/mingw64/bin/../include/glib-2.0 -IC:/msys64/mingw64/bin/../lib/glib-2.0/include -IC:/msys64/mingw64/bin/../include/harfbuzz -IC:/msys64/mingw64/bin/../include/freetype2 -IC:/msys64/mingw64/bin/../include/libpng16 -IC:/msys64/mingw64/bin/../include/fribidi -IC:/msys64/mingw64/bin/../include/cairo -IC:/msys64/mingw64/bin/../include/lzo -IC:/msys64/mingw64/bin/../include/pixman-1 -IC:/msys64/mingw64/bin/../include/gdk-pixbuf-2.0 -IC:/msys64/mingw64/bin/../include/graphene-1.0 -IC:/msys64/mingw64/bin/../lib/graphene-1.0/include
+  OBJECT_DIR = CMakeFiles\ProjektTesty.dir
+  OBJECT_FILE_DIR = CMakeFiles\ProjektTesty.dir\src\presentation\app
 
 
 # =============================================================================
@@ -64,7 +120,7 @@ build CMakeFiles/ProjektTesty.dir/src/main.c.obj: C_COMPILER__ProjektTesty_Debug
 #############################################
 # Link the executable ProjektTesty.exe
 
-build ProjektTesty.exe: C_EXECUTABLE_LINKER__ProjektTesty_Debug CMakeFiles/ProjektTesty.dir/src/main.c.obj
+build ProjektTesty.exe: C_EXECUTABLE_LINKER__ProjektTesty_Debug CMakeFiles/ProjektTesty.dir/src/presentation/main.c.obj CMakeFiles/ProjektTesty.dir/src/presentation/common/buttons.c.obj CMakeFiles/ProjektTesty.dir/src/presentation/question/question_view.c.obj CMakeFiles/ProjektTesty.dir/src/presentation/menu/menu_view.c.obj CMakeFiles/ProjektTesty.dir/src/presentation/score/score_view.c.obj CMakeFiles/ProjektTesty.dir/src/data/question_datasource.c.obj CMakeFiles/ProjektTesty.dir/src/domain/model/question.c.obj CMakeFiles/ProjektTesty.dir/src/domain/usecase/get_question_usecase.c.obj CMakeFiles/ProjektTesty.dir/src/presentation/app/app.c.obj
   FLAGS = -g
   LINK_LIBRARIES = -lgtk-4  -lpangowin32-1.0  -lpangocairo-1.0  -lpango-1.0  -lharfbuzz  -lgdk_pixbuf-2.0  -lcairo-gobject  -lcairo  -lgraphene-1.0  -lgio-2.0  -lgobject-2.0  -lglib-2.0  -lintl  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   LINK_PATH = -LC:/Users/Sebastian/CLionProjects/ProjektTesty/ProjektTesty
