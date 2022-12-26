@@ -1,5 +1,12 @@
 #include "./app/app.h"
 
 int main(int argc, char **argv) {
-    return initialize_app(argc, argv);
+    /* Since this application is running uninstalled,
+     * we have to help it find its schema. This
+     * is *not* necessary in properly installed
+     * application.
+     */
+    g_setenv("GSETTINGS_SCHEMA_DIR", ".", FALSE);
+
+    return g_application_run(G_APPLICATION (testify_app_new()), argc, argv);
 }

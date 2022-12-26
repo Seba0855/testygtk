@@ -1,8 +1,13 @@
-//
-// Created by Sebastian on 10.12.2022.
-//
+#include <gtk/gtk.h>
 
 #ifndef PROJEKTTESTY_QUESTION_VIEW_H
 #define PROJEKTTESTY_QUESTION_VIEW_H
+
+GtkWindow *display_question_view(GtkApplication *,
+                                 const char *,
+                                 const char *,
+                                 const char *,
+                                 const char *,
+                                 const char *);
 
 #endif //PROJEKTTESTY_QUESTION_VIEW_H

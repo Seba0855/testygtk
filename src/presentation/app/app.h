@@ -1,12 +1,15 @@
 #include <gtk/gtk.h>
-#include <stdio.h>
+#include <glib/gstdio.h>
+#include "../question/question_view.h"
 
 #ifndef PROJEKTTESTY_APP_H
 #define PROJEKTTESTY_APP_H
 
-#define PACKAGE_NAME "pl.smcebi.projekttesty"
+#define PACKAGE_NAME "pl.smcebi.testify"
+#define TESTIFY_APP_TYPE (tests_app_get_type ())
 
-static void activate();
-static void run_app();
+G_DECLARE_FINAL_TYPE (TestifyApp, testify_app, TESTIFY, APP, GtkApplication)
+
+TestifyApp *testify_app_new(void);
 
 #endif //PROJEKTTESTY_APP_H

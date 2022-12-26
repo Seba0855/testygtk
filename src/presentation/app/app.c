@@ -1,32 +1,87 @@
 #include "app.h"
 
-static void print_hello(GtkWidget *widget, gpointer data) {
-    g_print("Hello World\n");
+struct _TestifyApp {
+    GtkApplication parent;
+};
+
+G_DEFINE_TYPE(TestifyApp, testify, GTK_TYPE_APPLICATION);
+
+static void testify_app_init(TestifyApp *app) {
 }
 
-static void run_app() {
-    GtkWidget *window;
-    GtkWidget *button;
+static void preferences_activated(GSimpleAction *action,
+                                  GVariant *parameter,
+                                  gpointer app) {
+    TestifyAppPrefs *prefs;
+    GtkWindow *win;
 
-    window = gtk_application_window_new(NULL);
-    gtk_window_set_title(GTK_WINDOW(window), "Window");
-    gtk_window_set_default_size(GTK_WINDOW(window), 200, 200);
-
-    button = gtk_button_new_with_label("Hello World");
-    g_signal_connect(button, "clicked", G_CALLBACK(print_hello), NULL);
-    gtk_window_set_child(GTK_WINDOW(window), button);
-
-    gtk_window_present(GTK_WINDOW(window));
+    win = gtk_application_get_active_window(GTK_APPLICATION (app));
+    prefs = testify_app_prefs_new(TESTIFY_APP_WINDOW(win));
+    gtk_window_present(GTK_WINDOW (prefs));
 }
 
-int initialize_app(int argc, char *argv[]) {
-//    GtkApplication *app;
-//    int status;
-//
-//    app = gtk_application_new(PACKAGE_NAME, G_APPLICATION_DEFAULT_FLAGS);
-//    g_signal_connect(app, "activate", G_CALLBACK(run_app), NULL);
-//    status = g_application_run(G_APPLICATION(app), argc, argv);
-//    g_object_unref(app);
+static void quit_activated(GSimpleAction *action,
+                           GVariant *parameter,
+                           gpointer app) {
+    g_application_quit(G_APPLICATION (app));
+}
 
-    return 0;
+static GActionEntry app_entries[] =
+        {
+                {"preferences", preferences_activated, NULL, NULL, NULL},
+                {"quit",        quit_activated,        NULL, NULL, NULL}
+        };
+
+static void
+testify_app_startup(GApplication *app) {
+    const char *quit_accels[2] = {"<Ctrl>Q", NULL};
+
+    G_APPLICATION_CLASS (testify_app_parent_class)->startup(app);
+
+    g_action_map_add_action_entries(G_ACTION_MAP (app),
+                                    app_entries, G_N_ELEMENTS (app_entries),
+                                    app);
+    gtk_application_set_accels_for_action(GTK_APPLICATION (app),
+                                          "app.quit",
+                                          quit_accels);
+}
+
+static void testify_app_activate(GApplication *app) {
+    TestifyAppWindow *win;
+
+    win = testify_app_window_new(TESTIFY_APP(app));
+    gtk_window_present(GTK_WINDOW (win));
+}
+
+static void testify_app_open(GApplication *app,
+                             GFile **files,
+                             int n_files,
+                             const char *hint) {
+    GList *windows;
+    TestifyAppWindow *win;
+    int i;
+
+    windows = gtk_application_get_windows(GTK_APPLICATION (app));
+    if (windows)
+        win = TESTIFY_APP_WINDOW(windows->data);
+    else
+        win = testify_app_window_new(TESTIFY_APP(app));
+
+    for (i = 0; i < n_files; i++)
+        testify_app_window_open(win, files[i]);
+
+    gtk_window_present(GTK_WINDOW (win));
+}
+
+static void testify_app_class_init(TestifyAppClass *class) {
+    G_APPLICATION_CLASS (class)->startup = testify_app_startup;
+    G_APPLICATION_CLASS (class)->activate = testify_app_activate;
+    G_APPLICATION_CLASS (class)->open = testify_app_open;
+}
+
+TestifyApp *testify_app_new(void) {
+    return g_object_new(TESTIFY_APP_TYPE,
+                        "application-id", PACKAGE_NAME,
+                        "flags", G_APPLICATION_HANDLES_OPEN,
+                        NULL);
 }
