@@ -1,0 +1,258 @@
+<?xml version="1.0"?>
+<interface>
+  <requires lib="gtk+" version="3.24"/>
+  <!-- interface-naming-policy project-wide -->
+  <object class="GtkWidget" id="MenuView">
+    <property name="title" translatable="yes">Menu</property>
+    <property name="default_width">600</property>
+    <property name="default_height">400</property>
+    <child>
+      <object class="GtkVBox" id="vbox1">
+        <property name="visible">True</property>
+        <property name="orientation">vertical</property>
+        <child>
+          <placeholder/>
+        </child>
+        <child>
+          <object class="GtkLabel" id="EntryMessage">
+            <property name="visible">True</property>
+            <property name="label" translatable="yes">Witamy w Quizie z wiedzy o informatyce.
+
+Program wy&#x15B;wietla 15 losowych pyta&#x144; jednokrotnego wyboru z dziedziny informatyki.
+Po uko&#x144;czeniu testu program podliczy ilo&#x15B;&#x107; poprawnych odpowiedzi.
+
+Kliknij poni&#x17C;szy przycisk by rozpocz&#x105;&#x107; quiz.</property>
+            <property name="justify">center</property>
+          </object>
+          <packing>
+            <property name="position">1</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkHBox" id="hbox1">
+            <property name="visible">True</property>
+            <child>
+              <placeholder/>
+            </child>
+            <child>
+              <object class="GtkVBox" id="vbox2">
+                <property name="visible">True</property>
+                <property name="orientation">vertical</property>
+                <child>
+                  <placeholder/>
+                </child>
+                <child>
+                  <object class="GtkButton" id="BeginButton">
+                    <property name="label" translatable="yes">Rozpocznij test</property>
+                    <property name="visible">True</property>
+                    <property name="can_focus">True</property>
+                    <property name="receives_default">True</property>
+                    <signal name="clicked" handler="on_BeginButton_clicked"/>
+                  </object>
+                  <packing>
+                    <property name="position">1</property>
+                  </packing>
+                </child>
+                <child>
+                  <placeholder/>
+                </child>
+              </object>
+              <packing>
+                <property name="position">1</property>
+              </packing>
+            </child>
+            <child>
+              <placeholder/>
+            </child>
+          </object>
+          <packing>
+            <property name="position">2</property>
+          </packing>
+        </child>
+      </object>
+    </child>
+  </object>
+  <object class="GtkWidget" id="QuestionView">
+    <child>
+      <object class="GtkLayout" id="QuestionLayout">
+        <property name="visible">True</property>
+        <child>
+          <object class="GtkLabel" id="QuestionCounter">
+            <property name="width_request">104</property>
+            <property name="height_request">55</property>
+            <property name="visible">True</property>
+            <property name="label" translatable="yes">Pytanie 1/15</property>
+          </object>
+          <packing>
+            <property name="x">4</property>
+            <property name="y">9</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkRadioButton" id="Answer1">
+            <property name="label" translatable="yes">Odpowied&#x17A; 1</property>
+            <property name="width_request">335</property>
+            <property name="height_request">42</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="receives_default">False</property>
+            <property name="active">True</property>
+            <property name="inconsistent">True</property>
+            <property name="draw_indicator">True</property>
+          </object>
+          <packing>
+            <property name="x">38</property>
+            <property name="y">170</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkRadioButton" id="Answer2">
+            <property name="label" translatable="yes">Odpowied&#x17A; 2</property>
+            <property name="width_request">368</property>
+            <property name="height_request">52</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="receives_default">False</property>
+            <property name="active">True</property>
+            <property name="inconsistent">True</property>
+            <property name="draw_indicator">True</property>
+          </object>
+          <packing>
+            <property name="x">39</property>
+            <property name="y">210</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkRadioButton" id="Answer3">
+            <property name="label" translatable="yes">Odpowied&#x17A; 3</property>
+            <property name="width_request">340</property>
+            <property name="height_request">54</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="receives_default">False</property>
+            <property name="active">True</property>
+            <property name="inconsistent">True</property>
+            <property name="draw_indicator">True</property>
+          </object>
+          <packing>
+            <property name="x">39</property>
+            <property name="y">255</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkRadioButton" id="Answer4">
+            <property name="label" translatable="yes">Odpowied&#x17A; 4</property>
+            <property name="width_request">357</property>
+            <property name="height_request">52</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="receives_default">False</property>
+            <property name="active">True</property>
+            <property name="inconsistent">True</property>
+            <property name="draw_indicator">True</property>
+          </object>
+          <packing>
+            <property name="x">40</property>
+            <property name="y">303</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkButton" id="NextButton">
+            <property name="label" translatable="yes">Dalej</property>
+            <property name="width_request">95</property>
+            <property name="height_request">41</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="receives_default">True</property>
+            <signal name="clicked" handler="on_NextButton_clicked"/>
+          </object>
+          <packing>
+            <property name="x">537</property>
+            <property name="y">299</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkTextView" id="QuestionTextView">
+            <property name="width_request">455</property>
+            <property name="height_request">80</property>
+            <property name="visible">True</property>
+            <property name="editable">False</property>
+            <property name="cursor_visible">False</property>
+            <property name="overwrite">True</property>
+            <signal name="insert_at_cursor" handler="on_textview1_insert_at_cursor"/>
+          </object>
+          <packing>
+            <property name="x">124</property>
+            <property name="y">43</property>
+          </packing>
+        </child>
+      </object>
+    </child>
+  </object>
+  <object class="GtkWidget" id="ResultView">
+    <child>
+      <object class="GtkVBox" id="vbox1">
+        <property name="visible">True</property>
+        <property name="orientation">vertical</property>
+        <child>
+          <object class="GtkLabel" id="FinishLabel">
+            <property name="visible">True</property>
+            <property name="label" translatable="yes">Gratulacje! Uko&#x144;czy&#x142;e&#x15B; quiz</property>
+          </object>
+          <packing>
+            <property name="position">0</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkLabel" id="ResultLabel">
+            <property name="visible">True</property>
+            <property name="label" translatable="yes">Tw&#xF3;j wynik to: 10/15 dobrych odpowiedzi</property>
+          </object>
+          <packing>
+            <property name="position">1</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkHBox" id="hbox1">
+            <property name="visible">True</property>
+            <child>
+              <placeholder/>
+            </child>
+            <child>
+              <object class="GtkVBox" id="vbox2">
+                <property name="visible">True</property>
+                <property name="orientation">vertical</property>
+                <child>
+                  <placeholder/>
+                </child>
+                <child>
+                  <object class="GtkButton" id="QuitButton">
+                    <property name="label" translatable="yes">Zako&#x144;cz program</property>
+                    <property name="visible">True</property>
+                    <property name="can_focus">True</property>
+                    <property name="receives_default">True</property>
+                  </object>
+                  <packing>
+                    <property name="position">1</property>
+                  </packing>
+                </child>
+                <child>
+                  <placeholder/>
+                </child>
+              </object>
+              <packing>
+                <property name="position">1</property>
+              </packing>
+            </child>
+            <child>
+              <placeholder/>
+            </child>
+          </object>
+          <packing>
+            <property name="position">2</property>
+          </packing>
+        </child>
+      </object>
+    </child>
+  </object>
+</interface>
