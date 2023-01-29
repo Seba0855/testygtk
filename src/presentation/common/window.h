@@ -3,6 +3,8 @@
 #ifndef PROJEKTTESTY_WINDOW_H
 #define PROJEKTTESTY_WINDOW_H
 
-GtkWidget* setupWindow(GtkApplication*, char*);
+GtkWidget *setupApplicationWindow(GtkApplication *, char *);
+
+GtkWidget *setupNewWindow(char *);
 
 #endif //PROJEKTTESTY_WINDOW_H
