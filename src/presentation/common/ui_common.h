@@ -6,5 +6,6 @@
 #define PROJEKTTESTY_UI_COMMON_H
 
 #include "window.h"
+#include "buttons.h"
 
 #endif //PROJEKTTESTY_UI_COMMON_H

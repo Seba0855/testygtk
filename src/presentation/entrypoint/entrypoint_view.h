@@ -1,5 +1,6 @@
 #include <gtk/gtk.h>
 #include "../common/ui_common.h"
+#include "../question/question_view.h"
 
 #ifndef PROJEKTTESTY_MENU_VIEW_H
 #define PROJEKTTESTY_MENU_VIEW_H
