@@ -5,7 +5,10 @@
 #include "question_view.h"
 
 static void on_next_button_clicked(GtkButton *btn) {
+    size_t *rowsRead = malloc(sizeof(size_t));
     g_print("Next button clicked");
+    Question *dupa = get_question_array_execute(rowsRead);
+    free(rowsRead);
 }
 
 static void on_answer_selected(GtkButton *btn, Answer *answer) {

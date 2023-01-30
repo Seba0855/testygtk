@@ -8,6 +8,8 @@
 #ifndef PROJEKTTESTY_QUESTION_VIEW_H
 #define PROJEKTTESTY_QUESTION_VIEW_H
 
+#include "../../domain/usecase/get_question_usecase.h"
+
 typedef struct Answer {
     char *answer;
     int isCorrect;
