@@ -8,6 +8,8 @@
 #ifndef PROJEKTTESTY_QUESTION_VIEW_H
 #define PROJEKTTESTY_QUESTION_VIEW_H
 
+#include "../../domain/usecase/get_question_usecase.h"
+
 typedef struct Answer {
     char *answer;
     int isCorrect;
@@ -23,9 +25,10 @@ typedef struct RadioButtons {
 
 typedef struct QuestionView {
     GtkWidget *questionLabel;
-    Answer *answers;
+    Question *questionArray;
     RadioButtons *radioButtons;
     GtkWidget *nextButton;
+    int currentQuestion;
 } QuestionView;
 
 GtkWidget *question_view_create(GApplication *);
