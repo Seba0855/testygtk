@@ -1,2 +1,18 @@
 Jak wyjść z VIMa?;:q;:exit;Esc;Ctrl + C;1
-Czy kocham C?;tak;tak;tak;nie;1
+Jakie są trzy główne komponenty systemu operacyjnego?;Kernel, shell, biblioteki;Interfejs, pamięć, procesor;Dysk twardy, pamięć RAM, monitor;Karta graficzna, mysz, klawiatura;1
+Jak nazywa się język programowania, który jest niezależny od platformy i jest używany do tworzenia aplikacji internetowych?;Java;C++;Python;JavaScript;4
+Co to jest algorytm?;Szereg kroków do rozwiązania problemu;Program;Plik graficzny;Urządzenie wejścia/wyjścia;1
+Co to jest pamięć cache?;Pamięć, która jest szybsza niż pamięć RAM;Pamięć, która jest powiązana z procesorem;Pamięć, która jest powiązana z dyskiem twardym;Pamięć, która jest powiązana z kartą graficzną;1
+Co to jest protokół sieciowy?;Plik graficzny;Zestaw reguł i standardów, które umożliwiają urządzeniom komunikowanie się ze sobą;Urządzenie wejścia/wyjścia;Program;2
+Co to jest aplikacja webowa?;Aplikacja przeznaczona na telefony komórkowe;Program instalowany na komputerze;Aplikacja, która jest dostępna przez przeglądarkę internetową;Urządzenie wejścia/wyjścia;3
+Co to jest baza danych?;Plik rejestru komputera;Program instalowany na komputerze;Urządzenie wejścia/wyjścia;System do przechowywania i udostępniania informacji;4
+Jakie jest główne zastosowanie JavaScript?;Tworzenie aplikacji desktopowych;Tworzenie aplikacji internetowych;Edycja plików graficznych;Nagrywanie płyt CD/DVD;2
+Co to jest programowanie obiektowe?;Sposób kompresji plików;Sposób łączenia kilku plików w jeden;Paradygmat programowania, który opiera się na abstrakcji obiektów i ich właściwościach;Sposób tworzenia animacji;3
+Jakie są trzy główne cechy systemu operacyjnego?;Bezpieczeństwo, wydajność, łatwość użycia;Wygląd, funkcjonalność, cena;Szybkość, rozmiar, stabilność;Dostępność, funkcjonalność, cena;2
+Jakie są trzy główne cechy języka programowania Python?;Trudny, sztywny, specjalistyczny;Szybki, łatwy, intuicyjny;Mały, szybki, stabilny;Prosty, elastyczny, wszechstronny;4
+Co to jest SQL?;Format pliku tekstowego;Język programowania;Język zapytań, który jest używany do komunikacji z bazami danych;System operacyjny;3
+Co to jest CSS?;Język programowania;Język arkuszy stylów, który jest używany do opracowywania wyglądu stron internetowych;Format pliku graficznego;System operacyjny;2
+Co to jest sieć komputerowa?;System kilku lub więcej komputerów połączonych ze sobą, aby współpracować i udostępniać zasoby;Sieć stworzona w celu grania w gry komputerowe;Program instalowany na komputerze;Urządzenie wejścia/wyjścia;1
+Co to jest GitHub?;System wersjonowania kontenerów;System operacyjny;Format pliku tekstowego;Platforma do zarządzania projektami i współpracy nad kodem;4
+Co to jest Cloud Computing?;System operacyjny;Model dostarczania i używania zasobów informatycznych przez internet;Format pliku tekstowego;Prognoza zachmurzenia na następne dni;2
+Co to jest Big Data?;Duże ilości danych, które są trudne do przetworzenia za pomocą tradycyjnych metod i narzędzi;Małe ilości danych;Dane średniej wielkości;Dane tylko dla specjalistów;1
