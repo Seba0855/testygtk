@@ -29,8 +29,7 @@ static void configure_radio_buttons(QuestionView *questionView) {
 
 static void update_window_title(GtkWidget *win, QuestionView *questionView) {
     char *title = malloc(sizeof(char) * 100);
-    int questionNumber = questionView->currentQuestion + 1;
-    sprintf(title, "Quizy Informatyczne - Pytanie %d/15", questionNumber);
+    sprintf(title, "Quizy Informatyczne - Pytanie %d/15", questionView->currentQuestion + 1);
     gtk_window_set_title(GTK_WINDOW(win), title);
     free(title);
 }
@@ -48,8 +47,8 @@ static void update_radio_buttons(QuestionView *questionView) {
 }
 
 static void next_question(GtkButton *btn, QuestionView *questionView) {
-    if (questionView->currentQuestion <= 13) {
-        if (questionView->currentQuestion == 13) {
+    if (questionView->currentQuestion <= 14) {
+        if (questionView->currentQuestion == 14) {
             gtk_button_set_label(GTK_BUTTON(questionView->nextButton), "Zakończ test");
         }
 
@@ -62,6 +61,13 @@ static void next_question(GtkButton *btn, QuestionView *questionView) {
         gtk_widget_show(score_view_create(questionView->app, questionView->correctAnswers));
         gtk_window_destroy(GTK_WINDOW(gtk_widget_get_root(GTK_WIDGET(btn))));
     }
+}
+
+static void clear_button_selection(RadioButtons *radioButtons) {
+    gtk_check_button_set_active(GTK_CHECK_BUTTON(radioButtons->answer1), FALSE);
+    gtk_check_button_set_active(GTK_CHECK_BUTTON(radioButtons->answer2), FALSE);
+    gtk_check_button_set_active(GTK_CHECK_BUTTON(radioButtons->answer3), FALSE);
+    gtk_check_button_set_active(GTK_CHECK_BUTTON(radioButtons->answer4), FALSE);
 }
 
 static void check_correct_answer(QuestionView *questionView) {
@@ -83,6 +89,7 @@ static void check_correct_answer(QuestionView *questionView) {
             questionView->correctAnswers++;
         }
     }
+    clear_button_selection(radioButtons);
 }
 
 static void on_next_button_clicked(GtkButton *btn, QuestionView *questionView) {
