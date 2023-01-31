@@ -6,6 +6,6 @@
 #ifndef PROJEKTTESTY_BUTTONS_H
 #define PROJEKTTESTY_BUTTONS_H
 
-GtkWidget *set_radio_button(char *, GtkWidget *, GCallback callback);
+GtkWidget *set_radio_button(char *, GtkWidget *);
 
 #endif //PROJEKTTESTY_BUTTONS_H

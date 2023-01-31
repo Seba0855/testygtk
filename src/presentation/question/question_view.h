@@ -2,18 +2,13 @@
 // Created by Sebastian on 10.12.2022.
 //
 
-#include <gtk/gtk.h>
-#include "../common/ui_common.h"
-
 #ifndef PROJEKTTESTY_QUESTION_VIEW_H
 #define PROJEKTTESTY_QUESTION_VIEW_H
 
+#include <gtk/gtk.h>
+#include "../common/ui_common.h"
 #include "../../domain/usecase/get_question_usecase.h"
-
-typedef struct Answer {
-    char *answer;
-    int isCorrect;
-} Answer;
+#include "../score/score_view.h"
 
 typedef struct RadioButtons {
     GtkWidget *answerGroup;
@@ -24,10 +19,12 @@ typedef struct RadioButtons {
 } RadioButtons;
 
 typedef struct QuestionView {
+    GApplication *app;
     GtkWidget *questionLabel;
     Question *questionArray;
     RadioButtons *radioButtons;
     GtkWidget *nextButton;
+    int correctAnswers;
     int currentQuestion;
 } QuestionView;
 

@@ -7,7 +7,7 @@
 
 static gchar *entrypoint_label = "Witamy w Quizie z wiedzy o informatyce.\n"
                                  "\n"
-                                 "Program wyświetla 15 losowych pytań jednokrotnego wyboru z dziedziny informatyki.\n"
+                                 "Program wyświetla 15 pytań jednokrotnego wyboru z dziedziny informatyki.\n"
                                  "Po ukończeniu testu program podliczy ilość poprawnych odpowiedzi.\n"
                                  "\n"
                                  "Kliknij poniższy przycisk by rozpocząć quiz.";
